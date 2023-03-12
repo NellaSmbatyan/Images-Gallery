@@ -1,38 +1,83 @@
-.App {
+
+.App{
   text-align: center;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.model{
+  width:100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(14, 14, 14);
+  visibility: hidden;
+
+}
+.model.open {
+  visibility: visible;
+}
+.model img{
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 10px ;
 }
 
-.App-link {
-  color: #61dafb;
+.model.open button{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: blue;
+  margin-top: 100px;
+
+}
+.allPage{
+  background-color: rgba(234, 235, 250, 0.718);
+  width: 100%;
+  
+}
+.navbar{
+  background-color: blue;
+  height: 100px;
+  
+}
+.navbar a{
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 100px;
+  margin-top: 50px;
+}
+.navbar a:hover{
+  background-color: rgb(247, 13, 13);
+}
+.gallery{
+  margin-top: 30px;
+ margin: 40px;
+ margin-left: 200px
+}
+.gallery img{
+  border: 3px solid black;
+  margin: 10px;
+  border-radius: 10px;
+ 
 }
